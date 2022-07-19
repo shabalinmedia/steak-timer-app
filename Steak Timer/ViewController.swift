@@ -36,9 +36,14 @@ class ViewController: UIViewController {
         timer.invalidate()
         let userClicked = sender.titleLabel?.text
         let clicked = userClicked ?? "Default value"
-        totalTime = Float(steaks[clicked]!) // как здесь быть?
+        var result = steaks[clicked]
+        var seconds: Float = 0.0
+        
+        if result != nil {
+            let checkResult = Float(result!)
+            totalTime = checkResult
+        }
         progressBar.progress = 0.0
-        secondsPassed = 0.0
         
         
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [self] (Timer) in
