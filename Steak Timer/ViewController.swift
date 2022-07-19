@@ -36,8 +36,7 @@ class ViewController: UIViewController {
         timer.invalidate()
         let userClicked = sender.titleLabel?.text
         let clicked = userClicked ?? "Default value"
-        var result = steaks[clicked]
-        var seconds: Float = 0.0
+        let result = steaks[clicked]
         
         if result != nil {
             let checkResult = Float(result!)
