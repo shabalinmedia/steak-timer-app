@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Steak_Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="DYB-lw-X91">
+                                <rect key="frame" x="0.0" y="44" width="414" height="804"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jci-Mn-qt2" userLabel="TopView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="259"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="steak" translatesAutoresizingMaskIntoConstraints="NO" id="t4V-ca-r5j">
+                                                <rect key="frame" x="131.5" y="72" width="151" height="115"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="What type of steak do you want?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuJ-V3-XSV">
+                                                <rect key="frame" x="32" y="202" width="350" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="LuJ-V3-XSV" firstAttribute="top" secondItem="t4V-ca-r5j" secondAttribute="bottom" constant="15" id="4TN-Lw-A9c"/>
+                                            <constraint firstItem="t4V-ca-r5j" firstAttribute="centerX" secondItem="jci-Mn-qt2" secondAttribute="centerX" id="U7l-xa-Ryl"/>
+                                            <constraint firstItem="LuJ-V3-XSV" firstAttribute="centerX" secondItem="jci-Mn-qt2" secondAttribute="centerX" id="XGW-nW-267"/>
+                                            <constraint firstItem="t4V-ca-r5j" firstAttribute="centerY" secondItem="jci-Mn-qt2" secondAttribute="centerY" id="qRV-0s-h0o"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kB5-OH-hX5" userLabel="MiddleView">
+                                        <rect key="frame" x="0.0" y="260" width="414" height="322"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="H4s-AC-sUN">
+                                                <rect key="frame" x="110" y="30" width="194.5" height="262"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDq-By-lgg" userLabel="Rare">
+                                                        <rect key="frame" x="0.0" y="0.0" width="194.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Rare"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Rare">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5e2-w4-NvE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQA-gw-UqE" userLabel="Medium Rare">
+                                                        <rect key="frame" x="0.0" y="53" width="194.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Medium Rare"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Medium Rare">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HhT-zi-BsS"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhB-eZ-xHq" userLabel="Medium">
+                                                        <rect key="frame" x="0.0" y="106" width="194.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Medium"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Medium">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n4t-9R-c2w"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUY-fZ-lUq" userLabel="Medium Well">
+                                                        <rect key="frame" x="0.0" y="159" width="194.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Medium Well"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Medium Well">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B7O-rj-Qwu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMe-0O-B6E" userLabel="Well Done">
+                                                        <rect key="frame" x="0.0" y="212" width="194.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <accessibility key="accessibilityConfiguration" label="Well Done"/>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain" title="Well Done">
+                                                            <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IP9-zo-0Ma"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="H4s-AC-sUN" firstAttribute="centerY" secondItem="kB5-OH-hX5" secondAttribute="centerY" id="arL-4Y-cLg"/>
+                                            <constraint firstItem="H4s-AC-sUN" firstAttribute="centerX" secondItem="kB5-OH-hX5" secondAttribute="centerX" id="dbs-LP-kSt"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FIR-9Q-5FZ" userLabel="BottomView">
+                                        <rect key="frame" x="0.0" y="583" width="414" height="221"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleAspectFit" verticalHuggingPriority="750" ambiguous="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OUd-Fj-AUO">
+                                                <rect key="frame" x="20" y="108.5" width="374" height="4"/>
+                                                <color key="tintColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="OUd-Fj-AUO" firstAttribute="leading" secondItem="FIR-9Q-5FZ" secondAttribute="leading" constant="20" id="0Ur-e8-vqf"/>
+                                            <constraint firstItem="OUd-Fj-AUO" firstAttribute="centerY" secondItem="FIR-9Q-5FZ" secondAttribute="centerY" id="Sck-hk-rfH"/>
+                                            <constraint firstItem="OUd-Fj-AUO" firstAttribute="centerX" secondItem="FIR-9Q-5FZ" secondAttribute="centerX" id="j2K-HL-I6f"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kB5-OH-hX5" firstAttribute="top" secondItem="DYB-lw-X91" secondAttribute="top" constant="260" id="LUP-IC-WBx"/>
+                                    <constraint firstItem="FIR-9Q-5FZ" firstAttribute="top" secondItem="DYB-lw-X91" secondAttribute="top" constant="583" id="zhV-x5-4R6"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="DYB-lw-X91" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BsT-vo-2Kb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DYB-lw-X91" secondAttribute="bottom" constant="14" id="bUI-8K-Pai"/>
+                            <constraint firstItem="DYB-lw-X91" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cEv-3p-zEK"/>
+                            <constraint firstItem="DYB-lw-X91" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ilG-I6-Roq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countdownText" destination="LuJ-V3-XSV" id="2PJ-HS-7rz"/>
+                        <outlet property="progressBar" destination="OUd-Fj-AUO" id="e4N-Av-saK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="steak" width="151" height="115"/>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
