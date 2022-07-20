@@ -1,8 +1,9 @@
 # steak-timer-app
 
 
-Simple steak timer app to cook your steaks the best way.
+Simple steak timer app to cook your steaks the best way. With sound signal.
 
 
 Screen:
-![Alt text](Screen.png)
+
+<img src="Screen.png" width="300">
