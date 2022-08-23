@@ -14,11 +14,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var countdownText: UILabel!
     
     let steaks: [String: Int] = [
-        "Rare": 3,
-        "Medium Rare": 5,
-        "Medium": 7,
-        "Medium Well": 10,
-        "Well Done": 12
+        "Rare": 120,
+        "Medium Rare": 180,
+        "Medium": 240,
+        "Medium Well": 300,
+        "Well Done": 360
     ]
     
     var timer = Timer()
